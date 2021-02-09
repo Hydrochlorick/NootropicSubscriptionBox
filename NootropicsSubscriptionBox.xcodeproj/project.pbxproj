@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		505CDF8325D218B9004A44B3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505CDF8225D218B9004A44B3 /* HomeVC.swift */; };
+		505CDF8625D218CB004A44B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505CDF8525D218CB004A44B3 /* LoginVC.swift */; };
+		50B0324725C8C1AA00EE2EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */; };
+		50B0324925C8C1AA00EE2EF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0324825C8C1AA00EE2EF1 /* SceneDelegate.swift */; };
+		50B0324B25C8C1AA00EE2EF1 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0324A25C8C1AA00EE2EF1 /* OnboardingVC.swift */; };
+		50B0325025C8C1AC00EE2EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B0324F25C8C1AC00EE2EF1 /* Assets.xcassets */; };
+		50B0325325C8C1AC00EE2EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B0325125C8C1AC00EE2EF1 /* LaunchScreen.storyboard */; };
+		50D5975025CB79BC00DADBD2 /* OnboPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D5974F25CB79BC00DADBD2 /* OnboPageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		505CDF8225D218B9004A44B3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		505CDF8525D218CB004A44B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		50B0324325C8C1AA00EE2EF1 /* NootropicsSubscriptionBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NootropicsSubscriptionBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50B0324825C8C1AA00EE2EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		50B0324A25C8C1AA00EE2EF1 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		50B0324F25C8C1AC00EE2EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50B0325225C8C1AC00EE2EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50B0325425C8C1AC00EE2EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D5974F25CB79BC00DADBD2 /* OnboPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboPageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50B0324025C8C1AA00EE2EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		505CDF7B25D21065004A44B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50D5974F25CB79BC00DADBD2 /* OnboPageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		505CDF7C25D2106A004A44B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50B0324A25C8C1AA00EE2EF1 /* OnboardingVC.swift */,
+				505CDF8225D218B9004A44B3 /* HomeVC.swift */,
+				505CDF8525D218CB004A44B3 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		505CDF7D25D21070004A44B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50B0323A25C8C1AA00EE2EF1 = {
+			isa = PBXGroup;
+			children = (
+				50B0324525C8C1AA00EE2EF1 /* NootropicsSubscriptionBox */,
+				50B0324425C8C1AA00EE2EF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50B0324425C8C1AA00EE2EF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50B0324325C8C1AA00EE2EF1 /* NootropicsSubscriptionBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50B0324525C8C1AA00EE2EF1 /* NootropicsSubscriptionBox */ = {
+			isa = PBXGroup;
+			children = (
+				505CDF7D25D21070004A44B3 /* Model */,
+				505CDF7C25D2106A004A44B3 /* Controller */,
+				505CDF7B25D21065004A44B3 /* View */,
+				50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */,
+				50B0324825C8C1AA00EE2EF1 /* SceneDelegate.swift */,
+				50B0324F25C8C1AC00EE2EF1 /* Assets.xcassets */,
+				50B0325125C8C1AC00EE2EF1 /* LaunchScreen.storyboard */,
+				50B0325425C8C1AC00EE2EF1 /* Info.plist */,
+			);
+			path = NootropicsSubscriptionBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50B0324225C8C1AA00EE2EF1 /* NootropicsSubscriptionBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B0325725C8C1AC00EE2EF1 /* Build configuration list for PBXNativeTarget "NootropicsSubscriptionBox" */;
+			buildPhases = (
+				50B0323F25C8C1AA00EE2EF1 /* Sources */,
+				50B0324025C8C1AA00EE2EF1 /* Frameworks */,
+				50B0324125C8C1AA00EE2EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NootropicsSubscriptionBox;
+			productName = NootropicsSubscriptionBox;
+			productReference = 50B0324325C8C1AA00EE2EF1 /* NootropicsSubscriptionBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50B0323B25C8C1AA00EE2EF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					50B0324225C8C1AA00EE2EF1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 50B0323E25C8C1AA00EE2EF1 /* Build configuration list for PBXProject "NootropicsSubscriptionBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50B0323A25C8C1AA00EE2EF1;
+			productRefGroup = 50B0324425C8C1AA00EE2EF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50B0324225C8C1AA00EE2EF1 /* NootropicsSubscriptionBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50B0324125C8C1AA00EE2EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B0325325C8C1AC00EE2EF1 /* LaunchScreen.storyboard in Resources */,
+				50B0325025C8C1AC00EE2EF1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50B0323F25C8C1AA00EE2EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B0324B25C8C1AA00EE2EF1 /* OnboardingVC.swift in Sources */,
+				505CDF8325D218B9004A44B3 /* HomeVC.swift in Sources */,
+				505CDF8625D218CB004A44B3 /* LoginVC.swift in Sources */,
+				50B0324725C8C1AA00EE2EF1 /* AppDelegate.swift in Sources */,
+				50B0324925C8C1AA00EE2EF1 /* SceneDelegate.swift in Sources */,
+				50D5975025CB79BC00DADBD2 /* OnboPageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50B0325125C8C1AC00EE2EF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B0325225C8C1AC00EE2EF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50B0325525C8C1AC00EE2EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50B0325625C8C1AC00EE2EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50B0325825C8C1AC00EE2EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NootropicsSubscriptionBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Daydream-Society.NootropicsSubscriptionBox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50B0325925C8C1AC00EE2EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NootropicsSubscriptionBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Daydream-Society.NootropicsSubscriptionBox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50B0323E25C8C1AA00EE2EF1 /* Build configuration list for PBXProject "NootropicsSubscriptionBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B0325525C8C1AC00EE2EF1 /* Debug */,
+				50B0325625C8C1AC00EE2EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B0325725C8C1AC00EE2EF1 /* Build configuration list for PBXNativeTarget "NootropicsSubscriptionBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B0325825C8C1AC00EE2EF1 /* Debug */,
+				50B0325925C8C1AC00EE2EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50B0323B25C8C1AA00EE2EF1 /* Project object */;
+}
