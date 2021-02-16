@@ -53,6 +53,8 @@ class OnboardingVC: UIViewController {
         let pageTwo = OnboPageView(message: "Something!", imageName: "brainpowah", pageColor: .systemIndigo, isLastPage: false)
         let pageThree = OnboPageView(message: "BLAH", imageName: "brainthonk", pageColor: .systemPurple, isLastPage: true)
         
+        pageThree.startButton.addTarget(self, action: #selector(loginSegue), for: .touchUpInside)
+        
 //        let pageOne = createOnboardingPage(message: "Ready to test the limits of your executive functioning!", imageName: "smortdroog", color: UIColor.systemBlue, isLastPage: false)
 //        let pageTwo = createOnboardingPage(message: "Try a new Nootropic in your stack each month, stick with the ones that work!", imageName: "brainpowah", color: UIColor.systemIndigo, isLastPage: false)
 //        let pageThree = createOnboardingPage(message: "Start your journey by picking a base of some well known Nootropics!", imageName: "brainthonk", color: UIColor.systemPurple, isLastPage: true)
@@ -89,6 +91,11 @@ class OnboardingVC: UIViewController {
         container.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
         container.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
         container.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
+    }
+    
+    @objc func loginSegue() {
+        let loginVC = LoginVC()
+        self.navigationController?.pushViewController(loginVC, animated: true)
     }
 
 }

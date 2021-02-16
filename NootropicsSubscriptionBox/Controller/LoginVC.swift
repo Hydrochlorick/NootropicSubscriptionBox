@@ -13,7 +13,26 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        let pageStack: UIStackView = {
+            let pageStack = UIStackView()
+            pageStack.axis = .vertical
+            pageStack.spacing = 20
+            pageStack.distribution = .fill
+            pageStack.translatesAutoresizingMaskIntoConstraints = false
+            return pageStack
+        }()
+        
+//        let usernameField: UITextField = {
+//            let usernameField = UITextField()
+//            usernameField.translatesAutoresizingMaskIntoConstraints = false
+//            return usernameField
+//        }
+        
+        view.addSubview(pageStack)
+        pageStack.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor, multiplier: 0.6).isActive = true
+        pageStack.heightAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor, multiplier: 0.6).isActive = true
+        pageStack.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        pageStack.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
 

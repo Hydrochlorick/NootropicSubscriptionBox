@@ -13,6 +13,14 @@ class OnboPageView: UIView {
     var pageColor: UIColor? = .darkGray
     var isLastPage: Bool? = false
     
+    let startButton: UIButton = {
+       let startButton = UIButton()
+        startButton.setTitle("I'm Ready!", for: .normal)
+        startButton.backgroundColor = UIColor.white
+        startButton.setTitleColor(UIColor.darkGray, for: .normal)
+        return startButton
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
 //        setup()
@@ -68,13 +76,7 @@ class OnboPageView: UIView {
         pageStack.addArrangedSubview(pageMessage)
 
         if isLastPage == true {
-            let startButton: UIButton = {
-               let startButton = UIButton()
-                startButton.setTitle("I'm Ready!", for: .normal)
-                startButton.backgroundColor = UIColor.white
-                startButton.setTitleColor(UIColor.darkGray, for: .normal)
-                return startButton
-            }()
+            
             pageStack.addArrangedSubview(startButton)
         }
 
