@@ -41,8 +41,7 @@ class OnboardingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Create scroll view
-
+        // Add scroll view to superview
         view.addSubview(scrollView)
         setupScrollView()
         scrollView.addSubview(container)

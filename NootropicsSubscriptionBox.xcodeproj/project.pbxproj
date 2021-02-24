@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5022C00825E32A650015F072 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022C00725E32A650015F072 /* TabBarVC.swift */; };
+		5022C00B25E36FC40015F072 /* NewStackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022C00A25E36FC40015F072 /* NewStackVC.swift */; };
+		5022C00E25E372510015F072 /* NootStackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022C00D25E372500015F072 /* NootStackCell.swift */; };
+		5022C01125E3772F0015F072 /* Supplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022C01025E3772F0015F072 /* Supplement.swift */; };
+		50453A2C25E48743001A9E2C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A2B25E48743001A9E2C /* Section.swift */; };
+		50453A3025E48786001A9E2C /* BasicGridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A2F25E48786001A9E2C /* BasicGridSection.swift */; };
+		50453A3325E4878E001A9E2C /* TitleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A3225E4878E001A9E2C /* TitleSection.swift */; };
+		50453A3625E48793001A9E2C /* FavoritesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A3525E48793001A9E2C /* FavoritesSection.swift */; };
+		50453A3925E487BF001A9E2C /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A3825E487BF001A9E2C /* FavoritesCell.swift */; };
+		50453A3C25E487C5001A9E2C /* FavoritesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50453A3B25E487C5001A9E2C /* FavoritesCell.xib */; };
+		50453A3F25E487CC001A9E2C /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A3E25E487CC001A9E2C /* GridCell.swift */; };
+		50453A4225E487D0001A9E2C /* GridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50453A4125E487D0001A9E2C /* GridCell.xib */; };
+		50453A4525E4884A001A9E2C /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A4425E48849001A9E2C /* TitleCell.swift */; };
+		50453A4825E4884E001A9E2C /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50453A4725E4884E001A9E2C /* TitleCell.xib */; };
 		505CDF8325D218B9004A44B3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505CDF8225D218B9004A44B3 /* HomeVC.swift */; };
 		505CDF8625D218CB004A44B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505CDF8525D218CB004A44B3 /* LoginVC.swift */; };
 		50B0324725C8C1AA00EE2EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */; };
@@ -18,6 +32,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5022C00725E32A650015F072 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		5022C00A25E36FC40015F072 /* NewStackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStackVC.swift; sourceTree = "<group>"; };
+		5022C00D25E372500015F072 /* NootStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NootStackCell.swift; sourceTree = "<group>"; };
+		5022C01025E3772F0015F072 /* Supplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplement.swift; sourceTree = "<group>"; };
+		50453A2B25E48743001A9E2C /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		50453A2F25E48786001A9E2C /* BasicGridSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicGridSection.swift; sourceTree = "<group>"; };
+		50453A3225E4878E001A9E2C /* TitleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSection.swift; sourceTree = "<group>"; };
+		50453A3525E48793001A9E2C /* FavoritesSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesSection.swift; sourceTree = "<group>"; };
+		50453A3825E487BF001A9E2C /* FavoritesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
+		50453A3B25E487C5001A9E2C /* FavoritesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
+		50453A3E25E487CC001A9E2C /* GridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		50453A4125E487D0001A9E2C /* GridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridCell.xib; sourceTree = "<group>"; };
+		50453A4425E48849001A9E2C /* TitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		50453A4725E4884E001A9E2C /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
 		505CDF8225D218B9004A44B3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		505CDF8525D218CB004A44B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		50B0324325C8C1AA00EE2EF1 /* NootropicsSubscriptionBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NootropicsSubscriptionBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +69,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50453A2E25E48770001A9E2C /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				50453A2B25E48743001A9E2C /* Section.swift */,
+				50453A3225E4878E001A9E2C /* TitleSection.swift */,
+				50453A2F25E48786001A9E2C /* BasicGridSection.swift */,
+				50453A3525E48793001A9E2C /* FavoritesSection.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
 		505CDF7B25D21065004A44B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				50D5974F25CB79BC00DADBD2 /* OnboPageView.swift */,
+				5022C00D25E372500015F072 /* NootStackCell.swift */,
+				50453A4425E48849001A9E2C /* TitleCell.swift */,
+				50453A4725E4884E001A9E2C /* TitleCell.xib */,
+				50453A3E25E487CC001A9E2C /* GridCell.swift */,
+				50453A4125E487D0001A9E2C /* GridCell.xib */,
+				50453A3825E487BF001A9E2C /* FavoritesCell.swift */,
+				50453A3B25E487C5001A9E2C /* FavoritesCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -54,6 +100,7 @@
 			children = (
 				50B0324A25C8C1AA00EE2EF1 /* OnboardingVC.swift */,
 				505CDF8225D218B9004A44B3 /* HomeVC.swift */,
+				5022C00A25E36FC40015F072 /* NewStackVC.swift */,
 				505CDF8525D218CB004A44B3 /* LoginVC.swift */,
 			);
 			path = Controller;
@@ -62,6 +109,7 @@
 		505CDF7D25D21070004A44B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5022C01025E3772F0015F072 /* Supplement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,9 +133,11 @@
 		50B0324525C8C1AA00EE2EF1 /* NootropicsSubscriptionBox */ = {
 			isa = PBXGroup;
 			children = (
+				50453A2E25E48770001A9E2C /* Section */,
 				505CDF7D25D21070004A44B3 /* Model */,
 				505CDF7C25D2106A004A44B3 /* Controller */,
 				505CDF7B25D21065004A44B3 /* View */,
+				5022C00725E32A650015F072 /* TabBarVC.swift */,
 				50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */,
 				50B0324825C8C1AA00EE2EF1 /* SceneDelegate.swift */,
 				50B0324F25C8C1AC00EE2EF1 /* Assets.xcassets */,
@@ -156,6 +206,9 @@
 			files = (
 				50B0325325C8C1AC00EE2EF1 /* LaunchScreen.storyboard in Resources */,
 				50B0325025C8C1AC00EE2EF1 /* Assets.xcassets in Resources */,
+				50453A3C25E487C5001A9E2C /* FavoritesCell.xib in Resources */,
+				50453A4225E487D0001A9E2C /* GridCell.xib in Resources */,
+				50453A4825E4884E001A9E2C /* TitleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,12 +219,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5022C01125E3772F0015F072 /* Supplement.swift in Sources */,
+				5022C00825E32A650015F072 /* TabBarVC.swift in Sources */,
 				50B0324B25C8C1AA00EE2EF1 /* OnboardingVC.swift in Sources */,
 				505CDF8325D218B9004A44B3 /* HomeVC.swift in Sources */,
+				50453A2C25E48743001A9E2C /* Section.swift in Sources */,
 				505CDF8625D218CB004A44B3 /* LoginVC.swift in Sources */,
+				5022C00B25E36FC40015F072 /* NewStackVC.swift in Sources */,
+				50453A3625E48793001A9E2C /* FavoritesSection.swift in Sources */,
+				50453A3925E487BF001A9E2C /* FavoritesCell.swift in Sources */,
+				5022C00E25E372510015F072 /* NootStackCell.swift in Sources */,
 				50B0324725C8C1AA00EE2EF1 /* AppDelegate.swift in Sources */,
 				50B0324925C8C1AA00EE2EF1 /* SceneDelegate.swift in Sources */,
+				50453A3025E48786001A9E2C /* BasicGridSection.swift in Sources */,
 				50D5975025CB79BC00DADBD2 /* OnboPageView.swift in Sources */,
+				50453A4525E4884A001A9E2C /* TitleCell.swift in Sources */,
+				50453A3325E4878E001A9E2C /* TitleSection.swift in Sources */,
+				50453A3F25E487CC001A9E2C /* GridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
