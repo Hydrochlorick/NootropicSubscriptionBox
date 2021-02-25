@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Order {
     var date: Date
@@ -13,9 +14,13 @@ struct Order {
     var imgName: String
 }
 
+struct SuppCategory {
+    var title: String
+    var image: UIImage
+}
+
 struct Supplement {
     var name: String
-    var type: ProductType
     var suppType: SuppType
     
 }
@@ -28,10 +33,10 @@ enum ProductType: String, CaseIterable {
 }
 
 enum SuppType: String, CaseIterable {
-    case adaptogen = "Adaptogens"
-    case mito = "Mitochondrial Support"
-    case cardio = "Cardiovascular Support"
-    case energy = "Energy"
-    case cognition = "Cognitive"
-    case mushrooms = "Mushrooms"
+    case adaptogen = "adapt"
+    case mito = "mito"
+    case choline = "choline"
+    case energy = "energy"
+    case noot = "noot"
+    case mushrooms = "mush"
 }
