@@ -17,6 +17,7 @@ class NewStackVC: UIViewController {
         collectionView.allowsMultipleSelection = true
         return collectionView
     }()
+        
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class NewStackVC: UIViewController {
 }
 
 extension NewStackVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return SuppType.allCases.count
     }
@@ -51,7 +53,7 @@ extension NewStackVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "nootCell", for: indexPath) as? NootStackCell
         let supp = SuppType.allCases[indexPath.item]
-        cell?.setContent(supp: supp)
+        cell?.data = SuppCategory(title: supp.rawValue, image: UIImage(named: supp.rawValue)!)
         return cell!
     }
     

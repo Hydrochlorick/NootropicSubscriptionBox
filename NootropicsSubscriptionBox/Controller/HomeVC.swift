@@ -20,9 +20,8 @@ class HomeVC: UIViewController {
     var collectionView: UICollectionView!
     
     lazy var sections: [Section] = [
-        TitleSection(title: "Basic Grid Section"),
+        TitleSection(title: "Featured Categories"),
         BasicGridSection(),
-        TitleSection(title: "Feature Categories"),
         TitleSection(title: "Last Month's Favorites"),
         FavoritesSection()
     ]
