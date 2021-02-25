@@ -21,6 +21,9 @@
 		50453A4225E487D0001A9E2C /* GridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50453A4125E487D0001A9E2C /* GridCell.xib */; };
 		50453A4525E4884A001A9E2C /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A4425E48849001A9E2C /* TitleCell.swift */; };
 		50453A4825E4884E001A9E2C /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50453A4725E4884E001A9E2C /* TitleCell.xib */; };
+		50453A4E25E73054001A9E2C /* PastOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A4D25E73054001A9E2C /* PastOrdersVC.swift */; };
+		50453A5225E730A2001A9E2C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A5125E730A1001A9E2C /* Order.swift */; };
+		50453A5825E73274001A9E2C /* PastOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A5725E73274001A9E2C /* PastOrderCell.swift */; };
 		505CDF8325D218B9004A44B3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505CDF8225D218B9004A44B3 /* HomeVC.swift */; };
 		505CDF8625D218CB004A44B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505CDF8525D218CB004A44B3 /* LoginVC.swift */; };
 		50B0324725C8C1AA00EE2EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */; };
@@ -46,6 +49,9 @@
 		50453A4125E487D0001A9E2C /* GridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridCell.xib; sourceTree = "<group>"; };
 		50453A4425E48849001A9E2C /* TitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		50453A4725E4884E001A9E2C /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		50453A4D25E73054001A9E2C /* PastOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastOrdersVC.swift; sourceTree = "<group>"; };
+		50453A5125E730A1001A9E2C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		50453A5725E73274001A9E2C /* PastOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastOrderCell.swift; sourceTree = "<group>"; };
 		505CDF8225D218B9004A44B3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		505CDF8525D218CB004A44B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		50B0324325C8C1AA00EE2EF1 /* NootropicsSubscriptionBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NootropicsSubscriptionBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +78,7 @@
 		50453A2E25E48770001A9E2C /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				505CDF7B25D21065004A44B3 /* View */,
 				50453A2B25E48743001A9E2C /* Section.swift */,
 				50453A3225E4878E001A9E2C /* TitleSection.swift */,
 				50453A2F25E48786001A9E2C /* BasicGridSection.swift */,
@@ -80,11 +87,36 @@
 			path = Section;
 			sourceTree = "<group>";
 		};
-		505CDF7B25D21065004A44B3 /* View */ = {
+		50453A4B25E72FD0001A9E2C /* NewStack */ = {
+			isa = PBXGroup;
+			children = (
+				5022C00A25E36FC40015F072 /* NewStackVC.swift */,
+				5022C00D25E372500015F072 /* NootStackCell.swift */,
+			);
+			path = NewStack;
+			sourceTree = "<group>";
+		};
+		50453A4C25E73025001A9E2C /* PastOrders */ = {
+			isa = PBXGroup;
+			children = (
+				50453A4D25E73054001A9E2C /* PastOrdersVC.swift */,
+				50453A5725E73274001A9E2C /* PastOrderCell.swift */,
+			);
+			path = PastOrders;
+			sourceTree = "<group>";
+		};
+		50453A5525E73225001A9E2C /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				50D5974F25CB79BC00DADBD2 /* OnboPageView.swift */,
-				5022C00D25E372500015F072 /* NootStackCell.swift */,
+				50B0324A25C8C1AA00EE2EF1 /* OnboardingVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		505CDF7B25D21065004A44B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				50453A4425E48849001A9E2C /* TitleCell.swift */,
 				50453A4725E4884E001A9E2C /* TitleCell.xib */,
 				50453A3E25E487CC001A9E2C /* GridCell.swift */,
@@ -98,9 +130,7 @@
 		505CDF7C25D2106A004A44B3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				50B0324A25C8C1AA00EE2EF1 /* OnboardingVC.swift */,
 				505CDF8225D218B9004A44B3 /* HomeVC.swift */,
-				5022C00A25E36FC40015F072 /* NewStackVC.swift */,
 				505CDF8525D218CB004A44B3 /* LoginVC.swift */,
 			);
 			path = Controller;
@@ -110,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				5022C01025E3772F0015F072 /* Supplement.swift */,
+				50453A5125E730A1001A9E2C /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,10 +164,12 @@
 		50B0324525C8C1AA00EE2EF1 /* NootropicsSubscriptionBox */ = {
 			isa = PBXGroup;
 			children = (
+				50453A5525E73225001A9E2C /* Onboarding */,
+				50453A4C25E73025001A9E2C /* PastOrders */,
+				50453A4B25E72FD0001A9E2C /* NewStack */,
 				50453A2E25E48770001A9E2C /* Section */,
 				505CDF7D25D21070004A44B3 /* Model */,
 				505CDF7C25D2106A004A44B3 /* Controller */,
-				505CDF7B25D21065004A44B3 /* View */,
 				5022C00725E32A650015F072 /* TabBarVC.swift */,
 				50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */,
 				50B0324825C8C1AA00EE2EF1 /* SceneDelegate.swift */,
@@ -222,12 +255,14 @@
 				5022C01125E3772F0015F072 /* Supplement.swift in Sources */,
 				5022C00825E32A650015F072 /* TabBarVC.swift in Sources */,
 				50B0324B25C8C1AA00EE2EF1 /* OnboardingVC.swift in Sources */,
+				50453A5225E730A2001A9E2C /* Order.swift in Sources */,
 				505CDF8325D218B9004A44B3 /* HomeVC.swift in Sources */,
 				50453A2C25E48743001A9E2C /* Section.swift in Sources */,
 				505CDF8625D218CB004A44B3 /* LoginVC.swift in Sources */,
 				5022C00B25E36FC40015F072 /* NewStackVC.swift in Sources */,
 				50453A3625E48793001A9E2C /* FavoritesSection.swift in Sources */,
 				50453A3925E487BF001A9E2C /* FavoritesCell.swift in Sources */,
+				50453A4E25E73054001A9E2C /* PastOrdersVC.swift in Sources */,
 				5022C00E25E372510015F072 /* NootStackCell.swift in Sources */,
 				50B0324725C8C1AA00EE2EF1 /* AppDelegate.swift in Sources */,
 				50B0324925C8C1AA00EE2EF1 /* SceneDelegate.swift in Sources */,
@@ -235,6 +270,7 @@
 				50D5975025CB79BC00DADBD2 /* OnboPageView.swift in Sources */,
 				50453A4525E4884A001A9E2C /* TitleCell.swift in Sources */,
 				50453A3325E4878E001A9E2C /* TitleSection.swift in Sources */,
+				50453A5825E73274001A9E2C /* PastOrderCell.swift in Sources */,
 				50453A3F25E487CC001A9E2C /* GridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

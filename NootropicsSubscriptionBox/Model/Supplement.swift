@@ -8,11 +8,7 @@
 import Foundation
 import UIKit
 
-struct Order {
-    var date: Date
-    var contents: [Supplement]
-    var imgName: String
-}
+
 
 struct SuppCategory {
     var title: String
