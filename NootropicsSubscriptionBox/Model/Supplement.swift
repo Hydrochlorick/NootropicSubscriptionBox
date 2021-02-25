@@ -33,10 +33,10 @@ enum ProductType: String, CaseIterable {
 }
 
 enum SuppType: String, CaseIterable {
-    case adaptogen = "Adaptogens"
-    case mito = "Mitochondrial Support"
-    case cardio = "Cardiovascular Support"
-    case energy = "Energy"
-    case cognition = "Cognitive"
-    case mushrooms = "Mushrooms"
+    case adaptogen = "adapt"
+    case mito = "mito"
+    case choline = "choline"
+    case energy = "energy"
+    case noot = "noot"
+    case mushrooms = "mush"
 }

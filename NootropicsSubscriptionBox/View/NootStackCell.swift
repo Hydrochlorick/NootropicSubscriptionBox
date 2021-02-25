@@ -17,6 +17,14 @@ class NootStackCell: UICollectionViewCell {
         }
     }
         
+    var stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.distribution = .fill
+        stack.axis = .vertical
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+    
     var textLabel: UILabel = {
         let textLabel = UILabel(frame: .zero)
         textLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -32,16 +40,9 @@ class NootStackCell: UICollectionViewCell {
         return imageView
     }()
     
-    var stackView: UIStackView = {
-        let stack = UIStackView()
-        stack.distribution = .fill
-        stack.axis = .vertical
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        return stack
-    }()
     
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: .zero)
         setup()
     }
     
