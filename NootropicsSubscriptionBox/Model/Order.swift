@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct Order {
-    var date: Date
-    var contents: [Supplement]
-    var imgName: String
+    var month: String
+    var contents: [SuppCategory]
+    var image: UIImage
 }

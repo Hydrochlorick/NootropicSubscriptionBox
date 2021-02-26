@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-
+// TODO This is redundant right now because I'm treating each Supplement "type" like its own distinct item, instead of as a category for the items. Final version would have a database of all of the shops items, so they'd be their own objects. User should be able to have quick access to pages with information on each one.
 
 struct SuppCategory {
     var title: String

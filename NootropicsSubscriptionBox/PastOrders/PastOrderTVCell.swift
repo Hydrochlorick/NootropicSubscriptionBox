@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PastOrderCell: UITableViewCell {
+class PastOrderTVCell: UITableViewCell {
     
     let stackView: UIStackView = {
         let stackView = UIStackView()
@@ -21,7 +21,8 @@ class PastOrderCell: UITableViewCell {
     let orderTitle: UILabel = {
         let title = UILabel()
         title.font = UIFont(name: "Helvetica", size: 20)
-        title.textColor = .black
+        // Because dark gray > black, apparently
+        title.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         title.translatesAutoresizingMaskIntoConstraints = false
         return title
     }()
@@ -41,7 +42,7 @@ class PastOrderCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        // TODO Saw this in Adriana's project. Cross that bridge when we come to it.
     }
 
 }
