@@ -24,6 +24,7 @@
 		50453A4E25E73054001A9E2C /* PastOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A4D25E73054001A9E2C /* PastOrdersVC.swift */; };
 		50453A5225E730A2001A9E2C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A5125E730A1001A9E2C /* Order.swift */; };
 		50453A5825E73274001A9E2C /* PastOrderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A5725E73274001A9E2C /* PastOrderTVCell.swift */; };
+		50453A6325E8C049001A9E2C /* OrderDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50453A6225E8C049001A9E2C /* OrderDetailsVC.swift */; };
 		505CDF8325D218B9004A44B3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505CDF8225D218B9004A44B3 /* HomeVC.swift */; };
 		505CDF8625D218CB004A44B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505CDF8525D218CB004A44B3 /* LoginVC.swift */; };
 		50B0324725C8C1AA00EE2EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 		50453A4D25E73054001A9E2C /* PastOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastOrdersVC.swift; sourceTree = "<group>"; };
 		50453A5125E730A1001A9E2C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		50453A5725E73274001A9E2C /* PastOrderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastOrderTVCell.swift; sourceTree = "<group>"; };
+		50453A6225E8C049001A9E2C /* OrderDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsVC.swift; sourceTree = "<group>"; };
 		505CDF8225D218B9004A44B3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		505CDF8525D218CB004A44B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		50B0324325C8C1AA00EE2EF1 /* NootropicsSubscriptionBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NootropicsSubscriptionBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				50453A4D25E73054001A9E2C /* PastOrdersVC.swift */,
+				50453A6225E8C049001A9E2C /* OrderDetailsVC.swift */,
 				50453A5725E73274001A9E2C /* PastOrderTVCell.swift */,
 			);
 			path = PastOrders;
@@ -256,6 +259,7 @@
 				50453A3925E487BF001A9E2C /* FavoritesCell.swift in Sources */,
 				50453A4E25E73054001A9E2C /* PastOrdersVC.swift in Sources */,
 				5022C00E25E372510015F072 /* NootStackCell.swift in Sources */,
+				50453A6325E8C049001A9E2C /* OrderDetailsVC.swift in Sources */,
 				50B0324725C8C1AA00EE2EF1 /* AppDelegate.swift in Sources */,
 				50B0324925C8C1AA00EE2EF1 /* SceneDelegate.swift in Sources */,
 				50453A3025E48786001A9E2C /* BasicGridSection.swift in Sources */,

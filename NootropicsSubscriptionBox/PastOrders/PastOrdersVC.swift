@@ -60,11 +60,27 @@ class PastOrdersVC: UIViewController {
 
 extension PastOrdersVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return orders.count
+        return pastOrders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PastOrderTVCell
+        cell.accessoryType = .disclosureIndicator // Makes it clear that you can touch it for more details
+        cell.selectionStyle = .default // Change this if default is boring or ugly
+        cell.setupAsOrderCell(order: pastOrders[indexPath.row])
+        
+        // See how we're setting the label here? Do we really need the custom label object? je sais rien
+        cell.textLabel?.text = "\(pastOrders[indexPath.row].month)"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0 // We can play with this value. Try it on some different displays.
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Should be navigating to Order Contents")
+        
     }
     
     
