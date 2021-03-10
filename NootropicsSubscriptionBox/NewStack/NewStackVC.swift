@@ -14,7 +14,7 @@ class NewStackVC: UIViewController {
         layout.minimumLineSpacing = 30
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .lightGray
+        collectionView.backgroundColor = .white
         collectionView.allowsMultipleSelection = true
         
         collectionView.register(NootStackCell.self, forCellWithReuseIdentifier: "nootCell")
@@ -33,7 +33,7 @@ class NewStackVC: UIViewController {
         
         setupCollectionView()
         
-        view.backgroundColor = .cyan
+        view.backgroundColor = .white
     }
     
     func setupCollectionView() {
@@ -62,5 +62,9 @@ extension NewStackVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSo
         return cell!
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // Make the cell size proportional to the view's size
+        return CGSize(width: collectionView.frame.width/2.2, height: collectionView.frame.height/3)
+    }
     
 }

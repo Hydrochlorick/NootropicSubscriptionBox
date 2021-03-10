@@ -43,8 +43,8 @@ class LoginVC: UIViewController {
     let loginButton: UIButton = {
        let loginButton = UIButton()
         loginButton.setTitle("Login", for: .normal)
-        loginButton.backgroundColor = UIColor.black
-        loginButton.setTitleColor(UIColor.red, for: .normal)
+        loginButton.backgroundColor = UIColor.blue
+        loginButton.setTitleColor(.white, for: .normal)
         return loginButton
     }()
     

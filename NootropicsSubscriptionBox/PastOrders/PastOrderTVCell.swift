@@ -21,7 +21,7 @@ class PastOrderTVCell: UITableViewCell {
     let orderTitle: UILabel = {
         let title = UILabel()
         title.font = UIFont(name: "Helvetica", size: 20)
-        // Because dark gray > black, apparently
+        // Because all the design people keep saying dark gray > black
         title.textColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         title.translatesAutoresizingMaskIntoConstraints = false
         return title
@@ -58,33 +58,38 @@ class PastOrderTVCell: UITableViewCell {
         orderTitle.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.55).isActive = true
     }
     
-    // Make a function for setting TableViewCell up to show an order vs. setting it up to show a supplement item so it can be resused.
-    // Gonna do each of these a different way so I can adequately forget how I've done both of them, but then probably solidify at least one  next time I do this
+    // Make two functions for setting TableViewCell up. One to show an order, one to show a supplement item.
+    
+    // This is using the default image and text label included in a TableView cell.
+    // Theory: This would work even if I removed pretty much everything else on this page
+    func setupAsOrderCell(order: Order) {
+        imageView?.image = order.image
+        textLabel?.text = order.month
+    }
+    
+    // This is using the UI elements that we instantiated above. We didn't have to make a custom cell, really, but at least we know how.
     func setupAsItemCell(supp: SuppCategory) {
         itemImage.image = supp.image
         orderTitle.text = supp.title
     }
-    
-    // This is using the default image and text label included in the cell. We didn't actually need to make our own for this project, but likely will eventually.
-    func setupAsOrderCell(order: Order) {
-        textLabel?.text = order.month
-        imageView?.image = order.image
-    }
+
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Idk what this is, but it has to be here, apparently
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        self.backgroundColor = .darkGray
-        // TODO Think I saw this in Adriana's project. Cross that bridge when we come to it.
+//        self.backgroundColor = .lightGray
+//        TODO: Figure out why this is working the opposite of as intended
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
         // One day we'll learn wtf this is
+        // Could also do super.init(coder: coder) here, but I think I'd rather leave it and maybe one day bump into whatever actually calls it this way.
     }
 
 }

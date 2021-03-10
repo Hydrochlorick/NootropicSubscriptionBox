@@ -53,6 +53,7 @@ class NootStackCell: UICollectionViewCell {
     func setup(){
         contentView.addSubview(stackView)
         contentView.layer.cornerRadius = 15
+        contentView.backgroundColor = .lightGray
         stackView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.8).isActive = true
         stackView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.7).isActive = true
         stackView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
@@ -71,7 +72,7 @@ class NootStackCell: UICollectionViewCell {
     }
   
     func selectionChanged(selected: Bool){
-        //
+        // TODO: Implement this
     
     }
     

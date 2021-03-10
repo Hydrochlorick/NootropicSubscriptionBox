@@ -23,6 +23,7 @@ class OnboardingVC: UIViewController {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.isPagingEnabled = true
         scrollView.showsHorizontalScrollIndicator = false
+        scrollView.isDirectionalLockEnabled = true
         return scrollView
     }()
     
@@ -48,9 +49,9 @@ class OnboardingVC: UIViewController {
         // Constrain it to superview
         setupContainer()
         
-        let pageOne = OnboPageView(message: "We're working on that", imageName: "smortdroog", pageColor: .systemBlue, isLastPage: false)
-        let pageTwo = OnboPageView(message: "Something!", imageName: "brainpowah", pageColor: .systemIndigo, isLastPage: false)
-        let pageThree = OnboPageView(message: "BLAH", imageName: "brainthonk", pageColor: .systemPurple, isLastPage: true)
+        let pageOne = OnboPageView(message: "Plan for your long term health!", imageName: "smortdroog", pageColor: .systemBlue, isLastPage: false)
+        let pageTwo = OnboPageView(message: "Boost your immune system!", imageName: "brainpowah", pageColor: .systemIndigo, isLastPage: false)
+        let pageThree = OnboPageView(message: "Expand the limits of your brain!", imageName: "brainthonk", pageColor: .systemPurple, isLastPage: true)
         
         pageThree.startButton.addTarget(self, action: #selector(loginSegue), for: .touchUpInside)
         

@@ -25,7 +25,11 @@ class TabBarVC: UITabBarController {
         let newStackNav = UINavigationController(rootViewController: newStackVC)
         newStackVC.tabBarItem = UITabBarItem(title: "Order", image: UIImage(systemName: "shippingbox"), selectedImage: UIImage(systemName: "shippingbox.fill"))
         
-        viewControllers = [homeNav, newStackNav]
+        let orderHistoryVC = PastOrdersVC()
+        let orderHistoryNav = UINavigationController(rootViewController: orderHistoryVC)
+        orderHistoryVC.tabBarItem = UITabBarItem(title: "History", image: UIImage(systemName: "clock"), selectedImage: UIImage(systemName: "clock.fill"))
+        
+        viewControllers = [homeNav, newStackNav, orderHistoryNav]
     }
  
 }

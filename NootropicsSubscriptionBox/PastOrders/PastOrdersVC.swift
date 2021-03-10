@@ -15,8 +15,14 @@ class PastOrdersVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .white
 
+        tableView.register(PastOrderTVCell.self, forCellReuseIdentifier: "cell")
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        setupOrderHistory()
         setupTableView()
     }
     
@@ -25,7 +31,7 @@ class PastOrdersVC: UIViewController {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),    // Pretty sure this was how Adriana did it when I lasted checked out the example box. Might need to be double checked
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             tableView.rightAnchor.constraint(equalTo: view.rightAnchor)
@@ -38,7 +44,7 @@ class PastOrdersVC: UIViewController {
         let choline = SuppCategory(title: "Choline", image: UIImage(named: SuppType.choline.rawValue)!)
         let energy = SuppCategory(title: "Energy", image: UIImage(named: SuppType.energy.rawValue)!)
         let mito = SuppCategory(title: "Mitochondrial Support", image: UIImage(named: SuppType.mito.rawValue)!)
-        let mush = SuppCategory(title: "Mushroom", image: UIImage(named: SuppType.mushrooms.rawValue)!) // Still don't think I see what some folks see in these mushroom products. I don't think I ever noticed a difference. Reminder to look up research on that every once in a while to see where it's going.
+        let mush = SuppCategory(title: "Mushrooms", image: UIImage(named: SuppType.mushrooms.rawValue)!) // Still don't think I see what some folks see in these mushroom products. I don't think I ever noticed a difference. Reminder to look up research studies on that every once in a while to see if there are any new ones.
         let noot = SuppCategory(title: "Nootropics", image: UIImage(named: SuppType.noot.rawValue)!)
 
         let orderHistory = [
@@ -50,6 +56,7 @@ class PastOrdersVC: UIViewController {
         ]
         
         // Later on this will obviously be filled a different way
+        // After we have a lesson or two on storing persistent data
         for order in orderHistory {
             pastOrders.append(order)
         }
@@ -65,12 +72,10 @@ extension PastOrdersVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PastOrderTVCell
-        cell.accessoryType = .disclosureIndicator // Makes it clear that you can touch it for more details
-        cell.selectionStyle = .default // Change this if default is boring or ugly
+        cell.accessoryType = .disclosureIndicator // Indicator that tells user they can touch the cell for more details
+        cell.selectionStyle = .blue // This does nothing. TODO: Figure out how to use it.
         cell.setupAsOrderCell(order: pastOrders[indexPath.row])
         
-        // See how we're setting the label here? Do we really need the custom label object? je sais rien
-        cell.textLabel?.text = "\(pastOrders[indexPath.row].month)"
         return cell
     }
     
@@ -80,7 +85,10 @@ extension PastOrdersVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Should be navigating to Order Contents")
-        
+        let nextVC = OrderDetailsVC()
+        nextVC.currentOrder = pastOrders[indexPath.row]
+        // TODO: Make the last pushed view controller not have its own back button to stack on top of this one
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     

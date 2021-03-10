@@ -119,6 +119,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		50453A6525E9436D001A9E2C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5022C00725E32A650015F072 /* TabBarVC.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		505CDF7B25D21065004A44B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,12 +168,12 @@
 		50B0324525C8C1AA00EE2EF1 /* NootropicsSubscriptionBox */ = {
 			isa = PBXGroup;
 			children = (
+				50453A6525E9436D001A9E2C /* Navigation */,
 				50453A5525E73225001A9E2C /* Onboarding */,
 				50453A4C25E73025001A9E2C /* PastOrders */,
 				50453A4B25E72FD0001A9E2C /* NewStack */,
 				50453A2E25E48770001A9E2C /* Section */,
 				505CDF7D25D21070004A44B3 /* Model */,
-				5022C00725E32A650015F072 /* TabBarVC.swift */,
 				50B0324625C8C1AA00EE2EF1 /* AppDelegate.swift */,
 				50B0324825C8C1AA00EE2EF1 /* SceneDelegate.swift */,
 				50B0324F25C8C1AC00EE2EF1 /* Assets.xcassets */,

@@ -9,13 +9,13 @@ import UIKit
 
 class HomeVC: UIViewController {
     
-    let blabel: UILabel = {
-        let blabel = UILabel()
-        blabel.font = UIFont(name: "Helvetica", size: 30)
-        blabel.text = "Where the heart is. So what do I do with this empty chest?"
-        blabel.translatesAutoresizingMaskIntoConstraints = false
-        return blabel
-    }()
+//    let blabel: UILabel = {
+//        let blabel = UILabel()
+//        blabel.font = UIFont(name: "Helvetica", size: 30)
+//        blabel.text = "Where the heart is. So what do I do with this empty chest?"
+//        blabel.translatesAutoresizingMaskIntoConstraints = false
+//        return blabel
+//    }()
 
     var collectionView: UICollectionView!
     
